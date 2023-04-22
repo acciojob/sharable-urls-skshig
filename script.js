@@ -8,15 +8,15 @@ function sharableUrl(){
 }
 function getGeneratedUrl(name, year){
     let generated_url = "https://localhost:8080/";
-    if(name_input && year_input){
+    if(name && year){
         generated_url += "?name=" + name + "&year=" + year;
         
     }
-    else if(name_input && !year_input){
+    else if(name && !year){
         generated_url += "?name=" + name; 
     }
     else{
-        generated_url = "?year=" + year
+        generated_url += "?year=" + year
     }
     return generated_url;
 }
