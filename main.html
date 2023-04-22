@@ -1,8 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <script type="text/javascript" src="./script.js">
-</script>
-  </body>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharable URL's</title>
+</head>
+<body>
+  <form action="">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div>
+      <br>
+      <label for="year">Graduation Year</label>
+      <input type="number" name="year" id="year" placeholder="Year">
+    </div>
+    <br>
+    <div>
+      <button type = "button" id="button" onclick="sharableUrl()">Submit</button>
+    </div>
+    <div>
+      <h3 id="url"> https://localhost:8080/</h3>
+    </div>
+  </form>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
 </html>
